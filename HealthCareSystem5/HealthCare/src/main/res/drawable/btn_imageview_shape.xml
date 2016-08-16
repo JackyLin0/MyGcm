@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义矩形rectangle -->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+       <!--android:shape="rectangle">-->
+
+    <!--&lt;!&ndash; 设置边框的大小和颜色 &ndash;&gt;-->
+    <!--<stroke-->
+        <!--android:width="10dp"-->
+        <!--android:color="@android:color/background_dark"/>-->
+
+    <!--&lt;!&ndash; 设置矩形内的颜色,此处为透明色 &ndash;&gt;-->
+    <!--&lt;!&ndash;<solid android:color="@android:color/transparent"/>&ndash;&gt;-->
+    <!--<solid android:color="@android:color/background_dark"/>-->
+
+    <!--&lt;!&ndash; 定义圆角弧度 &ndash;&gt;-->
+    <!--<corners-->
+        <!--android:bottomLeftRadius="10dp"-->
+        <!--android:bottomRightRadius="10dp"-->
+        <!--android:topLeftRadius="10dp"-->
+        <!--android:topRightRadius="10dp"/>-->
+
+<!--</shape>-->
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:angle="0" android:endColor="#CAF644" android:startColor="#CAF644"/>
+
+            <stroke android:width="0.1dip" android:color="#CCCCCC"/>
+
+            <corners android:radius="3dp"/>
+
+            <padding android:bottom="1dp" android:left="1dp" android:right="1dp" android:top="1dp"/>
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:angle="0" android:endColor="#CAF644" android:startColor="#CAF644"/>
+
+            <stroke android:width="0.1dip" android:color="#CCCCCC"/>
+
+            <corners android:radius="3dp"/>
+
+            <padding android:bottom="1dp" android:left="1dp" android:right="1dp" android:top="1dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <!-- 渐变 -->
+            <gradient android:angle="0" android:endColor="#FFFFFF" android:startColor="#FFFFFF"/>
+            <!-- 描边 -->
+            <stroke android:width="2dip" android:color="#CCCCCC"/>
+            <!-- 圆角 -->
+            <corners
+                android:bottomLeftRadius="7dip" android:bottomRightRadius="7dip" android:topLeftRadius="7dip" android:topRightRadius="7dip"/>
+
+            <padding android:bottom="1dip" android:left="1dip" android:right="1dip" android:top="1dip"/>
+        </shape>
+    </item>
+
+</selector>

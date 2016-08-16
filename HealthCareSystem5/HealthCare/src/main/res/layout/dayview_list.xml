@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="#23556e">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/dayview_date_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="31"
+                android:textColor="#e4e0ce"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/dayview_date_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="週日"
+                android:textColor="#e4e0ce"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/event_green"
+            layout="@layout/dayview_event_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+
+        <include
+            android:id="@+id/event_purple"
+            layout="@layout/dayview_event_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_green"/>
+
+        <include
+            android:id="@+id/event_yellow"
+            layout="@layout/dayview_event_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_purple"/>
+
+        <include
+            android:id="@+id/event_blue"
+            layout="@layout/dayview_event_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_yellow"/>
+
+        <include
+            android:id="@+id/event_gracegreen"
+            layout="@layout/dayview_event_gracegreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_blue"/>
+
+        <include
+            android:id="@+id/event_graceblue"
+            layout="@layout/dayview_event_graceblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_gracegreen"/>
+
+        <LinearLayout
+            android:id="@+id/event_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="無"
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drawerframework_drawer_open">Open navigation drawer</string>
+    <string name="drawerframework_drawer_close">Close navigation drawer</string>
+
+    <string name="nv_header_title"><![CDATA[<big><b>%1$s</b>&nbsp<b>您好</b>&nbsp<b>%2$s</b></big><br><small><b>&nbsp&nbsp&nbsp</b>%3$s</small>]]></string>
+
+
+</resources>

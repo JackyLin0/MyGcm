@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#00FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/dialog_show_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="@string/dialog_dating_add"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/dialog_show_weekday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/dialog_show_date"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/dating_title"/>
+
+            <ImageButton
+                android:id="@+id/dialog_addnewevent_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/dialog_show_data"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:background="@color/page_transparnet"
+                android:src="@mipmap/search"
+                tools:ignore="HardcodedText,RtlCompat"/>
+
+            <EditText
+                android:id="@+id/dialog_show_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/dialog_show_weekday"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/dialog_addnewevent_btn"
+                android:layout_toRightOf="@id/dialog_show_weekday"
+                android:hint="@string/dialog_dating_serch"
+                android:singleLine="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_gray_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/dialog_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_gray_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dialog_gray_line"
+            android:layout_margin="20dp">
+
+            <GridView
+                android:id="@+id/dialog_event_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </GridView>
+
+            <!--&lt;!&ndash; 等候台資料下來另開一個xml排UI然後includ過來 &ndash;&gt;-->
+            <!--<ListView-->
+            <!--android:id="@+id/dialog_event_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--&lt;!&ndash;android:divider="@null"/>&ndash;&gt;-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

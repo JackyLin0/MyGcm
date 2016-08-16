@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/dialog_addnewevent_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/page_transparnet"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/gray_color"
+            android:textSize="35sp"
+            tools:ignore="HardcodedText,RtlCompat"/>
+
+        <TextView
+            android:id="@+id/dialog_show_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="12月31日"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/dialog_show_weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dialog_show_date"
+            android:layout_marginTop="5dp"
+            android:text="週日"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_gray_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dialog_gray_line"
+        android:layout_margin="20dp">
+
+        <!-- 等候台資料下來另開一個xml排UI然後includ過來 -->
+        <ListView
+            android:id="@+id/dialog_event_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+            <!--android:divider="@null"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

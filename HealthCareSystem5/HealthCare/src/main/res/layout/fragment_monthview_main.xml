@@ -1,0 +1,117 @@
+<FrameLayout
+    android:id="@+id/fragment_monthview_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.com.omnihealthgroup.healthcare.myhealthcalendar.MonthViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/calendar_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layerlist_monthview_week_bar"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/sun_day"/>
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/mon_day"/>
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/tue_day"/>
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/wed_day"/>
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/thu_day"/>
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/fri_day"/>
+
+            <TextView
+                style="@style/dateStyle"
+                android:text="@string/sat_day"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/calendar_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/calendar_week"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="#0099FF"
+                android:scrollbars="none"
+                android:splitMotionEvents="false"
+                tools:listitem="@layout/monthview_weekview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/linearlayout_custom_bg_rec"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/calendar_no_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/calendar_no_message"
+                    android:textSize="@dimen/hdpi_titlefontsize"/>
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recycle_view_message"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--</android.support.v7.widget.RecyclerView>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/eventview_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--<include layout="@layout/add_new_event_button" />-->
+    </LinearLayout>
+</FrameLayout>

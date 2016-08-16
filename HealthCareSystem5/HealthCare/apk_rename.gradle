@@ -1,0 +1,33 @@
+import java.text.SimpleDateFormat
+
+println("=========================================================================================")
+String apkNamePattern = "HealthCare-c%s.v%s-%s-%s.apk";
+String apkTimeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+
+String apkPath = "C:\\HealthCare_APK"
+
+new File(apkPath).mkdirs();
+
+android.applicationVariants.all { variant ->
+    variant.outputs.each { output ->
+        if (variant.buildType.name.equals("release")) {
+            String newName = String.format(apkNamePattern,
+                    variant.versionCode,
+                    variant.versionName,
+                    variant.buildType.name,
+                    apkTimeStamp,
+            );
+            /*/
+            def oldF = output.outputFile
+            println(oldF.parent)
+            println(oldF.name)
+            println("--------------------")
+            //apkDir = oldF.parent/**/
+            println(apkPath)
+            println(newName)
+            println("=================================================================================")
+
+            output.outputFile = new File(apkPath, newName)
+        } else println("run for debug")
+    }
+}

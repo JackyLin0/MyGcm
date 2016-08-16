@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="173dp"
+    android:background="@mipmap/nv_header_bg2"
+    android:orientation="horizontal">
+
+    <!--ImageView
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/nv_header_icon"
+        android:contentDescription="使用者頭像"/-->
+
+    <!--<tw.com.omnihealthgroup.modules.widget.OvalButton-->
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        tools:text="郝健康"/>
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:bufferType="spannable"
+        android:gravity="center"
+        android:singleLine="false"
+        android:textAppearance="?android:textAppearanceLarge"
+        tools:text="郝健康\n系統分析師"/>
+</LinearLayout>

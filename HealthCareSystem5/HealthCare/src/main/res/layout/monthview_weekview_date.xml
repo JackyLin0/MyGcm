@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/monthview_date_layout"
+    style="@style/monthview_weekdate"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/monthview_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:onClick="showWeekEvent"
+        android:textColor="#55000000"
+        android:textSize="15sp"
+        tools:text="31" />
+
+    <LinearLayout
+        android:id="@+id/date_event_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/date_event_green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/event_type_green"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/date_event_purple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/event_type_purple"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/date_event_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/event_type_yellow"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/date_event_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/event_type_blue"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/date_event_gracegreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/event_type_gracegreen"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/date_event_graceblue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/event_type_graceblue"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/date_event_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_day_event_dot" />
+</FrameLayout>

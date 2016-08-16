@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply from: "apk_rename.gradle"
+android {
+    signingConfigs {
+        config {
+            keyAlias 'omni health group'
+            keyPassword '70559767'
+            storeFile file('D:\\Git\\omnihealthgroup.keystore')
+            storePassword '70559767'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        ext {
+            app_name = "HealthCareSystem"
+            versionMajor = 1
+            versionMinor = 01
+            versionName = String.format("%d.%02d", versionMajor, versionMinor)
+            versionCode = 1
+            ////////////////////
+        }
+        applicationId "tw.com.omnihealthgroup.healthcare"
+        minSdkVersion 16
+        targetSdkVersion 23
+
+        versionCode ext.versionCode
+        versionName ext.versionName
+        resValue("string", "gradle_app_name", ext.app_name)
+        resValue("string", "gradle_version", ext.versionName)
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+
+    compile project(':DrawerFramework')
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    compile files('libs/pclinklibrary_v1.1.0.jar')
+    compile files('libs/vizego-base.jar')
+    compile files('libs/YuanYuUtils.jar')
+    compile files('libs/FragmentBackHandler-2.1.jar')
+//    compile files('libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar')
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+//    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+//    compile 'com.github.clans:fab:1.6.4'
+
+    compile 'com.google.android.gms:play-services-gcm:9.0.0'
+    compile 'com.google.android.gms:play-services-ads:9.0.0'
+    compile 'com.google.android.gms:play-services-analytics:9.0.0'
+}
+apply plugin: 'com.google.gms.google-services'

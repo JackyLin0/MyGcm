@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/fragment_personalprofiles"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mysystemsettings.PersonalProfilesFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <android.support.v7.widget.Toolbar
+            style="@style/StyleToolbar"
+            android:layout_marginBottom="-8dp"/>
+
+        <!-- Content -->
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/linearlayout_custom_bg_rec"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginTop="10dp"-->
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/personal_profiles"/>
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/textView1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:text="@string/fragment_personalprofiles"-->
+                            <!--android:textSize="@dimen/hdpi_titlefontsize"/>-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userIDNO"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userIDNO"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userName"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userEngName"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userEngName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userSex"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userSex"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userBirthDay"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userBirthDay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userNationality"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userNationality"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userHomeTEL"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userHomeTEL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userMobile"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userEMail"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userEMail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userBlood"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userBlood"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userRhType"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userRhType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@mipmap/person_account"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="@string/userMarried"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text=" : "
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="6"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/userMarried"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:text="123456"
+                                    android:textSize="@dimen/hdpi_fontsize"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/event_btn"
+                    style="@style/edit_event"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+            </RelativeLayout>
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/event_btn"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginRight="25dp"-->
+            <!--android:layout_marginBottom="25dp"-->
+            <!--android:elevation="5dp"-->
+            <!--android:src="@drawable/ic_edit"-->
+            <!--app:backgroundTint="@color/mainColor1Trans"-->
+            <!--app:pressedTranslationZ="5dp"-->
+            <!--app:rippleColor="@color/white_trans30"/>-->
+            <!--&lt;!&ndash;android:src="@android:drawable/ic_dialog_email"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/circleshadow_event"/>&ndash;&gt;-->
+            <!--</RelativeLayout>-->
+
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

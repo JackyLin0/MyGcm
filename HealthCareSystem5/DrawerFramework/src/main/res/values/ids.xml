@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主框 -->
+    <!--<item name="DrawerLayoutResId"  type="id">&lt;!&ndash; DrawerLayoutResId  固定 ResId &ndash;&gt;</item>-->
+    <item name="DrawerMenuResId" type="id"><!-- DrawerMenuResId    固定 ResId --></item>
+    <item name="DrawerMainResId" type="id"><!-- DrawerMainResId    固定 ResId --></item>
+    <!-- 副框 -->
+    <item name="DrawerToolbarResId" type="id"><!-- DrawerToolbarResId 固定 ResId --></item>
+    <item name="DrawerContentResId" type="id"><!-- DrawerContentResId 固定 ResId --></item>
+</resources>

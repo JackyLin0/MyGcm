@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Toolbar Style -->
+    <style name="StyleToolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:id">@id/DrawerToolbarResId</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:elevation" tools:targetApi="lollipop">10dp</item>-->
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <!--這個有點怪怪,之後再調整-->
+        <item name="android:background">?attr/colorPrimary</item>
+        <!--這個有點怪怪,之後再調整-->
+        <!--<item name="title">@android:string/untitled</item>--> <!--預定 title 後, 會怪怪的-->
+        <item name="titleTextAppearance">@style/TextAppearanceToolbarTitle</item>
+    </style>
+
+    <style name="TextAppearanceToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/color_toolbar_title</item>
+        <!--<item name="android:textSize">24dp</item>-->
+    </style>
+
+    <style name="NavigationView.Title" parent="NavigationView.Title">
+        <!--<item name="android:textSize">20dp</item>-->
+    </style>
+</resources>

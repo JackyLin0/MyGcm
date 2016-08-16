@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/sun_d"
+        style="@style/monthview_weekendview"
+        layout="@layout/monthview_weekview_date"/>
+
+    <include
+        android:id="@+id/mon_d"
+        style="@style/monthview_weekview"
+        layout="@layout/monthview_weekview_date"/>
+
+    <include
+        android:id="@+id/tue_d"
+        style="@style/monthview_weekview"
+        layout="@layout/monthview_weekview_date"/>
+
+    <include
+        android:id="@+id/wed_d"
+        style="@style/monthview_weekview"
+        layout="@layout/monthview_weekview_date"/>
+
+    <include
+        android:id="@+id/thu_d"
+        style="@style/monthview_weekview"
+        layout="@layout/monthview_weekview_date"/>
+
+    <include
+        android:id="@+id/fri_d"
+        style="@style/monthview_weekview"
+        layout="@layout/monthview_weekview_date"/>
+
+    <include
+        android:id="@+id/sat_d"
+        style="@style/monthview_weekendview"
+        layout="@layout/monthview_weekview_date"/>
+
+</LinearLayout>

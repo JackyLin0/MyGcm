@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_color"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/new_event_btn_cancel"
+            style="@style/new_event_btn"
+            android:layout_marginEnd="0.5dp"
+            android:text="@string/add_new_cancel"
+            android:textColor="@color/white_color"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat"/>
+
+        <Button
+            android:id="@+id/new_event_btn_commit"
+            style="@style/new_event_btn"
+            android:layout_marginStart="0.5dp"
+            android:text="@string/add_new_commit"
+            android:textColor="@color/white_color"
+            android:textSize="20sp"
+            tools:ignore="RtlCompat"/>
+    </LinearLayout>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bloodglucose_title_icon"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/please_keyin_blood_glucose_description"
+                android:textSize="@dimen/hdpi_titlefontsize"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/limosisradiobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/before"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                <RadioButton
+                    android:id="@+id/aftermealradiobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/after"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/hdpi_fontsize"/>
+
+                <RadioButton
+                    android:id="@+id/usuallyradiobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/usually"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/hdpi_fontsize"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/hdpi_record_date"
+                android:textSize="@dimen/hdpi_fontsize"/>
+
+            <EditText
+                android:id="@+id/editTextRecordDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_custom_bg_rec"
+                android:focusable="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="@dimen/hdpi_fontsize"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/hdpi_blood_glucose_string"
+                android:textSize="@dimen/hdpi_fontsize"/>
+
+            <EditText
+                android:id="@+id/editTextBloodGlucoseValue"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_custom_bg_rec"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="@dimen/hdpi_fontsize">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/blood_glucose_unit"
+                android:textSize="@dimen/hdpi_fontsize"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--</ScrollView>-->
+
+
+</LinearLayout>

@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_color"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/new_event_btn_cancel"
+                    style="@style/new_event_btn"
+                    android:layout_marginEnd="0.5dp"
+                    android:text="@string/add_new_cancel"
+                    android:textColor="@color/white_color"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat"/>
+
+                <Button
+                    android:id="@+id/new_event_btn_commit"
+                    style="@style/new_event_btn"
+                    android:layout_marginStart="0.5dp"
+                    android:text="@string/add_new_commit"
+                    android:textColor="@color/white_color"
+                    android:textSize="20sp"
+                    tools:ignore="RtlCompat"/>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--<LinearLayout-->
+                    <!--style="@style/new_event_list"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spinner_classify_event"-->
+                    <!--android:layout_width="280dp"-->
+                    <!--android:layout_height="match_parent"/>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--style="@style/new_event_list">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/iv_new_event_name"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="40dp"-->
+                    <!--android:layout_marginEnd="20dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:background="@mipmap/neweventname"-->
+                    <!--tools:ignore="ContentDescription"/>-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/add_new_event_name"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginEnd="15dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/layerlist_monthview_week_bar"-->
+                    <!--android:hint="@string/new_event_name_hint"-->
+                    <!--android:textSize="20sp"-->
+                    <!--tools:ignore="RtlCompat"/>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--style="@style/new_event_list">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/iv_new_event_locate"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="40dp"-->
+                    <!--android:layout_marginEnd="20dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:background="@mipmap/neweventlocate"-->
+                    <!--tools:ignore="ContentDescription"/>-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/add_new_event_locate"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginEnd="15dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/layerlist_monthview_week_bar"-->
+                    <!--android:hint="@string/new_event_locate_hint"-->
+                    <!--android:textSize="20sp"-->
+                    <!--tools:ignore="RtlCompat"/>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--style="@style/new_event_list">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/iv_new_event_time"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="40dp"-->
+                    <!--android:layout_marginEnd="20dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:background="@mipmap/neweventtime"-->
+                    <!--tools:ignore="ContentDescription"/>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginEnd="15dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--tools:ignore="RtlCompat">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/time_from_title"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="@string/new_event_startdate"-->
+                    <!--android:textColor="#25a398"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textStyle="bold"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/time_from_ymd"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:textSize="18sp"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/time_to_title"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="@string/new_event_enddate"-->
+                    <!--android:textColor="#25a398"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textStyle="bold"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/time_to_ymd"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:textSize="18sp"/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/iv_new_event_backup"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="40dp"-->
+                    <!--android:layout_marginEnd="20dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:background="@mipmap/neweventbackup"-->
+                    <!--tools:ignore="ContentDescription"/>-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/add_new_event_note"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginEnd="15dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/layerlist_monthview_week_bar"-->
+                    <!--android:hint="@string/new_event_backup_hint"-->
+                    <!--android:textSize="20sp"-->
+                    <!--tools:ignore="RtlCompat"/>-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#747474"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center|left"
+                            android:text="@string/add_dating_content"
+                            android:textColor="@color/white_color"
+                            android:textSize="21dp"
+                            tools:ignore="RtlCompat"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_name"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <EditText
+                            android:id="@+id/add_dating_name"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_type"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:id="@+id/add_dating_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="@string/add_dating_type_message"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@mipmap/dating_unit"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_amount"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/add_dating_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/add_dating_amount_message"
+                                android:textSize="20dp"
+                                tools:ignore="ContentDescription"/>
+
+                            <SeekBar
+                                android:id="@+id/dating_number_seekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/add_dating_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="@string/add_dating_amount_message"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center">-->
+
+                        <!--<android.support.v7.widget.RecyclerView-->
+                        <!--android:id="@+id/recycleView"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--</android.support.v7.widget.RecyclerView>-->
+
+
+                        <!--</LinearLayout>-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:src="@mipmap/dating_unit"/>-->
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/new_event_list">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:text="@string/add_dating_amount_title"
+                                android:textSize="20dp"
+                                tools:ignore="ContentDescription"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:text="@string/add_dating_amount_remark"
+                                android:textSize="20dp"
+                                tools:ignore="ContentDescription"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/photo"
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@mipmap/dating_unit_null"/>
+
+
+                    </LinearLayout>
+
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:layout_marginTop="5dp">-->
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/text1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="@string/add_dating_amount_title"-->
+                    <!--android:textSize="20dp"-->
+                    <!--tools:ignore="ContentDescription"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/text2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignLeft="@id/text1"-->
+                    <!--android:layout_below="@id/text1"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="@string/add_dating_amount_remark"-->
+                    <!--android:textSize="16dp"-->
+                    <!--tools:ignore="ContentDescription"/>-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/camera_btn"-->
+                    <!--android:layout_width="46dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_alignLeft="@id/text2"-->
+                    <!--android:layout_below="@id/text2"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:src="@mipmap/camera_btn"/>-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/photo_btn"-->
+                    <!--android:layout_width="46dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_alignRight="@id/text2"-->
+                    <!--android:layout_below="@id/text2"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_toRightOf="@id/camera_btn"-->
+                    <!--android:src="@mipmap/photo_btn"/>-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/photo"-->
+                    <!--android:layout_width="180dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_toRightOf="@id/text2"-->
+                    <!--android:src="@mipmap/dating_image"/>-->
+
+
+                    <!--</RelativeLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#747474"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="center|left"
+                            android:text="@string/add_dating_amount_content"
+                            android:textColor="@color/white_color"
+                            android:textSize="21dp"
+                            tools:ignore="RtlCompat"/>
+
+
+                    </LinearLayout>
+
+
+                    <!--//////////////////////////////////////-->
+
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_amount"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:id="@+id/dating_unit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:singleLine="true"
+                            android:text="100"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="g/ml"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_moisture"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:id="@+id/dating_Heat"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:singleLine="true"
+                            android:text="100"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="KCal"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_sugar"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:id="@+id/dating_carbohydrate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:singleLine="true"
+                            android:text="100"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="g"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_protein"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:id="@+id/dating_protein"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:singleLine="true"
+                            android:text="100"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="g"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/new_event_list"
+                        android:background="@drawable/layerlist_monthview_week_bar">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/add_dating_fat"
+                            android:textSize="20dp"
+                            tools:ignore="ContentDescription"/>
+
+                        <TextView
+                            android:id="@+id/dating_adipose"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:singleLine="true"
+                            android:text="100"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="g"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat"/>
+                    </LinearLayout>
+
+                    <!--///////////////////////////////////-->
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/del_btn"
+                style="@style/del_event"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

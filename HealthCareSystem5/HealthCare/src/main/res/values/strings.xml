@@ -1,0 +1,340 @@
+<resources>
+    <string name="app_name">@string/gradle_app_name</string>
+    <string name="login">開啟登入驗證</string>
+    <string name="title">智 慧 城 市\n健 康 雲</string>
+    <string name="message">歡迎回到我的健康管理</string>
+    <string name="message_title">智慧城市健康雲</string>
+    <string name="msg_logout_confirm">是否確定要登出本APP</string>
+    <string name="msg_leave_confirm">是否確定要離開本APP</string>
+    <string name="msg_confirm">確定</string>
+    <string name="msg_cancel">取消</string>
+    <string name="fragment_myhealthcare">我的健康管理</string>
+    <string name="fragment_myhealthcalendar">我的健康行事曆</string>
+    <string name="fragment_myhealthvideo">我的影音衛教</string>
+    <string name="fragment_mysystemsettings">我的個人設定</string>
+    <string name="fragment_personalprofiles">我的個人資料</string>
+    <string name="fragment_myhealthdating">我的健康飲食</string>
+    <string name="fragment_myhealthcommunity">我的健康社群</string>
+    <string name="fragment_myhealthactivity">我的健康運動</string>
+
+    <string name="msg_connect_faild_title">沒有網路連線</string>
+    <string name="msg_connect_faild">必須在有網路連線的地方才能使用本APP</string>
+    <string name="msg_net_faild">網路連線不穩，請稍後再試</string>
+    <string name="msg_net_reUpdate">資料背景上傳成功</string>
+
+    <string name="tabpage_1">血壓趨勢圖</string>
+    <string name="tabpage_2">血糖趨勢圖</string>
+    <string name="tabpage_3">脈搏趨勢圖</string>
+    <string name="tabpage_4">身高體重趨勢圖</string>
+    <string name="tabpage_5">身體質量趨勢圖</string>
+    <string name="tabpage_6">體溫趨勢圖</string>
+    <string name="tabpage_7">頭圍趨勢圖</string>
+    <string name="tabpage_8">上臂圍趨勢圖</string>
+    <string name="tabpage_9">腰圍趨勢圖</string>
+    <string name="tabpage_10">臀圍趨勢圖</string>
+
+    <string name="tabpage_11">早餐</string>
+    <string name="tabpage_12">午前點心</string>
+    <string name="tabpage_13">午餐</string>
+    <string name="tabpage_14">午後點心</string>
+    <string name="tabpage_15">晚餐</string>
+    <string name="tabpage_16">宵夜</string>
+
+    <string name="webview_error_pageURL">網頁讀取失敗，請確認您手機的連線</string>
+    <string name="webview_loading_body">資料讀取中，請稍候...</string>
+    <string name="auto_upload_uploading">資料傳輸中，請稍候...</string>
+    <string name="msg_tokenexp">驗證登入資訊中，請稍後...</string>
+    <string name="msg_retokenget">驗證資訊已過期，請重新登入</string>
+    <string name="msg_tokenget">連接資料庫中，請稍後...</string>
+    <string name="auto_upload_device_searching">裝置搜尋中，請稍候...</string>
+    <string name="webview_loading_title">智慧城市健康雲</string>
+
+    <string name="auto_upload_ble_not_supported">此功能僅適用支援藍芽BLE的行動裝置</string>
+    <string name="auto_upload_nonetwork_error">此功能需使用網路，請確認網路狀態重新進入再試</string>
+    <string name="auto_upload_old_version_title">系統版本過舊</string>
+    <string name="auto_upload_old_vertion">藍芽BLE僅支援Android4.3以上版本"\n"請先升級後再重新掃描</string>
+    <string name="auto_upload_ble_open">請先開啟手機藍芽功能</string>
+    <string name="auto_upload_timeout">藍芽BLE掃描逾時</string>
+    <string name="auto_upload_ble">藍芽BLE</string>
+    <string name="auto_upload_not_found">找不到設備，請重新操作</string>
+    <string name="auto_upload_success">資料已上傳成功</string>
+    <string name="auto_upload_faild">上傳遠端伺服器失敗，轉由背景自動上傳</string>
+
+    <string name="download_data_first">首次使用需載入較多資料，\n還請耐心等候……</string>
+    <string name="download_data">資料更新中，請稍候……</string>
+
+    <!--========================血壓頁面============================-->
+    <string name="please_keyin_blood_pressure_description">請輸入血壓量測結果</string>
+    <string name="blood_pressure_string_description">血壓</string>
+    <string name="systolic_blood_pressure">收縮壓</string>
+    <string name="diastolic_blood_pressure">舒張壓</string>
+    <string name="pulse">脈搏</string>
+    <string name="hdpi_pulse">脈&#160;&#160;搏</string>
+    <string name="blood_pressure_unit">mmHg</string>
+    <string name="pulse_unit">次數/分鐘</string>
+    <string name="blood_input_title">血壓量測資料輸入</string>
+    <string name="blood_manuialupload">手動上傳</string>
+
+    <string name="user_alert_message5">時間格式錯誤，請調整！</string>
+    <string name="user_enter_blood_pressure_sbp">請輸入收縮壓</string>
+    <string name="user_enter_blood_pressure_dbp">請輸入舒張壓</string>
+    <string name="user_enter_blood_pressure_dbp2">舒張壓值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_blood_pressure_sbp2">收縮壓危險或不合理，請重新輸入！</string>
+    <string name="user_enter_pulse">請輸入脈搏</string>
+    <string name="user_enter_pulse2">脈搏值危險或不合理，請重新輸入！</string>
+    <string name="user_save_blood_pressure">血壓資料已儲存</string>
+    <string name="user_alert_message6">量測時間不能超過現在時間，\n請調整時間！</string>
+
+    <!--========================血糖頁面==========================-->
+    <string name="please_keyin_blood_glucose_description">請輸入血糖量測結果</string>
+    <string name="before">飯前</string>
+    <string name="after">飯後</string>
+    <string name="usually">隨機</string>
+    <string name="blood_glucose_string">血糖</string>
+    <string name="hdpi_blood_glucose_string">血&#160;&#160;糖</string>
+    <string name="blood_glucose_unit">mg/dL</string>
+    <string name="record_date">時間</string>
+    <string name="hdpi_record_date">時&#160;&#160;間</string>
+    <string name="please_select_record_time">請輸入量測日期</string>
+    <string name="check_string">確認</string>
+    <string name="bloodglucose_input_title">血糖量測資料輸入</string>
+    <string name="user_enter_blood_glucose">請輸入血糖數值</string>
+    <string name="user_enter_blood_glucose2">血糖值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_blood_glucose_time">請輸入量測時間</string>
+    <string name="user_enter_blood_glucose_type">請選擇血糖類型</string>
+    <string name="user_save_blood_glucose">血糖資料已儲存</string>
+
+    <!--========================身理體態量測頁面==========================-->
+    <string name="please_keyin_body_description">請輸入身理體態量測結果</string>
+    <string name="body_height">身&#160;&#160;高</string>
+    <string name="body_width">體&#160;&#160;重</string>
+    <string name="temperature">體&#160;&#160;溫</string>
+    <string name="head_circumference">頭&#160;&#160;圍</string>
+    <string name="arm_circumference">上臂圍</string>
+    <string name="waistline">腰&#160;&#160;圍</string>
+    <string name="hips">臀&#160;&#160;圍</string>
+    <string name="height_unit">cm</string>
+    <string name="width_unit">Kg</string>
+    <string name="temperature_unit">°C</string>
+    <!--<string name="circumference_unit">mm</string>-->
+
+    <string name="user_enter_body_height">請輸入身高</string>
+    <string name="user_enter_body_width">請輸入體重</string>
+    <string name="user_enter_temperature">請輸入體溫</string>
+    <string name="user_enter_head_circumference">請輸入頭圍</string>
+    <string name="user_enter_arm_circumference">請輸入上臂圍</string>
+    <string name="user_enter_waistline">請輸入腰圍</string>
+    <string name="user_enter_hips">請輸入臀圍</string>
+    <string name="user_enter_faild">請至少輸入一項體態量測數值</string>
+
+    <string name="user_enter_body_height2">身高數值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_body_width2">體重數值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_temperature2">體溫數值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_head_circumference2">頭圍數值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_arm_circumference2">上臂圍數值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_waistline2">腰圍數值危險或不合理，請重新輸入！</string>
+    <string name="user_enter_hips2">臀圍數值危險或不合理，請重新輸入！</string>
+    <string name="user_save_body">身理體態量測資料已儲存</string>
+    <string name="user_save_dating">飲食紀錄增加完成</string>
+    <string name="user_save_event">新增事件已儲存</string>
+    <string name="user_del_event">確定要刪除此筆記事</string>
+    <string name="user_del_dating">確定要刪除此筆飲食紀錄</string>
+
+    <string name="userIDNO">身分證號碼</string>
+    <string name="userName">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="userEngName">英文暱稱</string>
+    <string name="userSex">性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;別</string>
+    <string name="userBirthDay">出生年月日</string>
+    <string name="userNationality">國&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;籍</string>
+    <string name="userHomeTEL">室內電話</string>
+    <string name="userMobile">行動電話</string>
+    <string name="userEMail">電子郵件</string>
+    <string name="userBlood">血&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;型</string>
+    <string name="userRhType">RH&#160;&#160;血型</string>
+    <string name="userMarried">婚姻狀況</string>
+    <string name="user_message">尚未設置相關資料</string>
+    <string name="user_IDNO_message">本資料無法由手機端修改</string>
+    <string name="user_save_person">會員個人資料編輯已儲存</string>
+    <string name="please_keyin_person">請修改欲編輯的基本資料</string>
+
+    <string name="gcm_pushdeviceReg">裝置向系統註冊成功，同意接收推播訊息</string>
+    <string name="gcm_pushdeviceOut">裝置向系統註銷成功，停止接收推播訊息</string>
+    <string name="gcm_sendMessage">成功發送推播訊息</string>
+    <string name="gcm_remind">提醒您，需開啟接收推播功能，才能收到相關訊息</string>
+    <string name="gcm_note">提醒您，未綁定GoogleService帳號之裝置，將無法正常使用推播通訊功能</string>
+
+    <!-- 月檢視畫面星期標題 -->
+    <string name="title_activity_month_view">CalenderModel</string>
+    <string name="sun_day">週日</string>
+    <string name="mon_day">週一</string>
+    <string name="tue_day">週二</string>
+    <string name="wed_day">週三</string>
+    <string name="thu_day">週四</string>
+    <string name="fri_day">週五</string>
+    <string name="sat_day">週六</string>
+
+    <!-- 日檢視畫面星期標題 -->
+    <string name="week_sun_day">週日</string>
+    <string name="week_mon_day">週一</string>
+    <string name="week_tue_day">週二</string>
+    <string name="week_wed_day">週三</string>
+    <string name="week_thu_day">週四</string>
+    <string name="week_fri_day">週五</string>
+    <string name="week_sat_day">週六</string>
+
+    <!-- 同步ToolBar與MonthView日期的tag-->
+    <item name="synchro_month" type="id"/>
+    <item name="synchro_year" type="id"/>
+    <item name="synchro_date" type="id"/>
+    <item name="synchro_day_in_month" type="id"/>
+    <item name="synchro_day_in_week" type="id"/>
+    <item name="synchro_week_in_month" type="id"/>
+    <item name="synchro_position" type="id"/>
+
+    <!-- DayEvent日期的tag-->
+    <item name="dayevent_month" type="id"/>
+    <item name="dayevent_date" type="id"/>
+    <item name="dayevent_day_in_week" type="id"/>
+    <item name="dayevent_position" type="id"/>
+
+    <!--========================行事曆事件============================-->
+    <string name="title_activity_add_new_event">AddNewEventActivity</string>
+    <string name="add_new_commit">完成</string>
+    <string name="add_new_cancel">取消</string>
+
+    <string name="new_event_name_hint">行程名稱</string>
+    <string name="new_Clinic_name_hint">一般記事內容</string>
+    <string name="new_Consultation_name_hint">重要活動記事</string>
+    <string name="new_Operation_name_hint">量測提醒記事</string>
+    <string name="new_Meeting_name_hint">用藥提醒記事</string>
+    <string name="new_Personal_name_hint">預約看診記事</string>
+    <string name="new_Examination_name_hint">健康檢查記事</string>
+
+    <string name="new_event_locate_hint">行程地點</string>
+    <string name="new_event_startdate">開始時間</string>
+    <string name="new_event_enddate">結束時間</string>
+    <string name="new_event_backup_hint">備註事項</string>
+    <string name="calendar_no_message">本月尚無活動記事</string>
+    <string name="dating_no_message">請按〝+〞號，開始添加你的記錄</string>
+    <!--<string name="new_event_startdate_hint">1970 年 1 月 1 日  上午 00:00</string>-->
+    <!--<string name="new_event_enddate_hint">2099 年 12 月 31 日  下午 23:59</string>-->
+    <string name="new_event_cancel_title">是否放棄編輯您的個人記事？</string>
+    <string name="new_measure_cancel_title">是否放棄新增個人生理量測資料？</string>
+    <string name="new_personal_cancel_title">是否放棄編輯會員個人資料？</string>
+    <string name="new_dating_cancel_title">是否放棄編輯您的飲食？</string>
+    <string name="new_event_cancel_message">現在放棄將會遺失所有填寫中的資料</string>
+    <string name="new_event_cancel_yes">是</string>
+    <string name="new_event_cancel_no">否</string>
+    <string name="new_event_alert_name">請填寫您的記事內容！</string>
+    <string name="new_event_alert_location">請填寫行程地點！</string>
+    <string name="new_event_alert_start_time">請填寫開始時間！</string>
+    <string name="new_event_alert_end_time">請填寫結束時間！</string>
+    <string name="new_event_wrong_date">結束時間不可指定於開始時間之前！</string>
+    <string name="new_event_wrong">請選擇記事類型！</string>
+
+    <!--========================推播GCM============================-->
+    <string name="add_gcm_name">請填寫訊息標題！</string>
+    <string name="add_gcm_body">請填寫訊息內容！</string>
+
+    <!--========================健康食物============================-->
+    <string name="dialog_dating_add">新增食物</string>
+    <string name="dialog_dating_serch">搜尋食品(請輸入名稱)</string>
+    <string name="add_dating_message">食物新增完成</string>
+    <string name="add_dating_content">飲食內容</string>
+    <string name="dialog_list_dating">食品列表</string>
+
+    <string name="add_dating_name">食品名稱</string>
+    <string name="add_dating_amount">份量</string>
+    <string name="add_dating_type">烹調方式</string>
+    <string name="add_dating_name_message">請填寫食品名稱</string>
+    <string name="add_dating_amount_message">請點擊選填份量及單位</string>
+    <string name="add_dating_type_message">請點擊選填烹調方式</string>
+    <string name="add_dating_amount_title">參考份量</string>
+    <string name="add_dating_amount_remark">(此圖代表每單位份量)</string>
+    <string name="add_dating_amount_content">每份營養價值</string>
+    <string name="add_dating_moisture">熱量</string>
+    <string name="add_dating_protein">蛋白質</string>
+    <string name="add_dating_fat">脂肪</string>
+    <string name="add_dating_sugar">醣類</string>
+
+
+
+    <!-- ToolBar類型選擇 -->
+    <string-array name="event_type">
+        <item>記事總覽</item>
+        <item>一般記事</item>
+        <item>重要活動</item>
+        <item>量測提醒</item>
+        <item>用藥提醒</item>
+        <item>預約看診</item>
+        <item>健康檢查</item>
+    </string-array>
+
+    <string-array name="event_type_event">
+        <item>一般記事</item>
+        <item>重要活動</item>
+        <item>量測提醒</item>
+        <item>用藥提醒</item>
+        <item>預約看診</item>
+        <item>健康檢查</item>
+    </string-array>
+
+    <!-- 單日事件檢視的星期 -->
+    <string-array name="dialog_weekday">
+        <item>週日</item>
+        <item>週一</item>
+        <item>週二</item>
+        <item>週三</item>
+        <item>週四</item>
+        <item>週五</item>
+        <item>週六</item>
+    </string-array>
+
+    <string-array name="user_sex">
+        <item>未知</item>
+        <item>男性</item>
+        <item>女性</item>
+    </string-array>
+
+    <string-array name="user_nationality">
+        <item>未知</item>
+        <item>台灣</item>
+    </string-array>
+
+    <string-array name="user_blood">
+        <item>未知</item>
+        <item>A型</item>
+        <item>B型</item>
+        <item>O型</item>
+        <item>AB型</item>
+    </string-array>
+
+    <string-array name="user_rhtype">
+        <item>未知</item>
+        <item>Rh陽性</item>
+        <item>RH陰性</item>
+    </string-array>
+
+    <string-array name="user_married">
+        <item>未知</item>
+        <item>未婚</item>
+        <item>已婚</item>
+    </string-array>
+
+    <string-array name="count_event">
+        <item>三天</item>
+        <item>一週</item>
+        <item>一個月</item>
+        <item>三個月</item>
+        <item>一年</item>
+    </string-array>
+
+    <string-array name="type_dating">
+        <item>蒸</item>
+        <item>滷</item>
+        <item>炒</item>
+        <item>煎/炸</item>
+        <item>未進行其他烹調加工</item>
+    </string-array>
+
+</resources>

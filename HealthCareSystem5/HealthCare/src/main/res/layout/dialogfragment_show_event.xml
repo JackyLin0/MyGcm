@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"/>
+
+    <include
+        android:id="@+id/dialog_main"
+        layout="@layout/dialogfragment_view_custom"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"/>
+
+</FrameLayout>

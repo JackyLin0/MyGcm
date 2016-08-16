@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 私藏顏色 -->
+    <color name="faty_color_1">#FF7B00</color>
+    <color name="faty_color_2">#000043</color>
+    <!-- 顏色篩濾: 定義標準色 -->
+    <color name="healthcare_color_1">#9C27B0</color>
+    <color name="showme_color_1">#26BCC3</color>
+    <color name="showme_color_2">#CEECEC</color>
+    <color name="showme_color_3">#23556E</color>
+    <color name="showme_color_4">#F1EAD7</color>
+    <color name="showme_color_5">#FFFFFF</color>
+
+    <!-- 元件顏色 -->
+    <!-- toolbar -->
+    <color name="color_toolbar_background">@color/healthcare_color_1</color>
+    <color name="color_toolbar_title">@color/showme_color_4</color>
+    <!-- content -->
+    <color name="color_content_background">@color/showme_color_2</color>
+    <!-- tab/head -->
+    <color name="color_headline">@color/showme_color_3</color>
+    <color name="color_subhead">@color/showme_color_4</color>
+    <!-- background color -->
+    <color name="color_background_1">@color/showme_color_2</color>
+    <color name="color_background_2">@color/showme_color_4</color>
+
+
+
+    <color name="F1B7B0">#F1B7B0</color>
+    <color name="ECECEC">#ECECEC</color>
+
+    <color name="D74844">#D74844</color>
+    <color name="b4D88C4">#4D88C4</color>
+
+    <color name="A74A3D">#A74A3D</color>
+    <color name="C8A152">#C8A152</color>
+    <color name="fc8736">#fc8736</color>
+    <color name="A4D031">#A4D031</color>
+    <color name="g80d478">#80d478</color>
+    <color name="b65cec6">#65cec6</color>
+    <color name="d478ae">#d478ae</color>
+    <color name="b799AB3">#799AB3</color>
+    <color name="p9e78d4">#9e78d4</color>
+    <color name="fdf068">#fdf068</color>
+    <color name="mainColor1">#D7E5EA</color>
+    <color name="mainColor2">#D8FFD8</color>
+
+    <color name="mainColor3">#FFFFFF</color>
+    <color name="mainColor4">#F7F7F7</color>
+
+</resources>

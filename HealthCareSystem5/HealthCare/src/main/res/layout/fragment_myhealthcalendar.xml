@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/fragment_myhealthcalendar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myhealthcalendar.MyHealthCalendarFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <android.support.v7.widget.Toolbar
+            style="@style/StyleToolbar"
+            android:layout_marginBottom="-8dp"/>
+
+        <!-- Content -->
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/main_container_layout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:orientation="vertical">-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="4"-->
+                    <!--android:orientation="vertical">-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:splitMotionEvents="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="ObsoleteLayoutParam,RtlCompat">
+
+        <ImageView
+            android:id="@+id/schesule_mode_changed"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_action_go_to_today"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_toStartOf="@+id/schesule_mode_changed"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false">
+
+            <Spinner
+                android:id="@+id/spinner_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/spinner_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <!--</RelativeLayout>-->
+
+        <ImageView
+            android:id="@+id/add_new_date_event_btn"
+            style="@style/add_new_event"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </RelativeLayout>
+</FrameLayout>

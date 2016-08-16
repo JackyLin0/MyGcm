@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--&lt;!&ndash; 私藏顏色 &ndash;&gt;-->
+    <!--<color name="faty_color_1">#FF7B00</color>-->
+    <!--<color name="faty_color_2">#000043</color>-->
+    <!--&lt;!&ndash; 顏色篩濾: 定義標準色 &ndash;&gt;-->
+    <!--<color name="healthcare_color_1">#BA68C8</color>-->
+    <!--<color name="showme_color_1">#26BCC3</color>-->
+    <!--<color name="showme_color_2">#CEECEC</color>-->
+    <!--<color name="showme_color_3">#23556E</color>-->
+    <!--<color name="showme_color_4">#F1EAD7</color>-->
+    <!--<color name="showme_color_5">#FFFFFF</color>-->
+
+    <!--&lt;!&ndash; 元件顏色 &ndash;&gt;-->
+    <!--&lt;!&ndash; toolbar &ndash;&gt;-->
+    <!--<color name="color_toolbar_background">@color/healthcare_color_1</color>-->
+    <!--<color name="color_toolbar_title">@color/showme_color_4</color>-->
+    <!--&lt;!&ndash; content &ndash;&gt;-->
+    <!--<color name="color_content_background">@color/showme_color_2</color>-->
+    <!--&lt;!&ndash; tab/head &ndash;&gt;-->
+    <!--<color name="color_headline">@color/showme_color_3</color>-->
+    <!--<color name="color_subhead">@color/showme_color_4</color>-->
+    <!--&lt;!&ndash; background color &ndash;&gt;-->
+    <!--<color name="color_background_1">@color/showme_color_2</color>-->
+    <!--<color name="color_background_2">@color/showme_color_4</color>-->
+
+
+    <!--/////////////////////////////////////////////////-->
+
+    <color name="white_color">#FFFFFF</color>
+    <!-- colors -->
+    <color name="white_trans30">#4CFFFFFF</color>
+    <color name="white_trans50">#80FFFFFF</color>
+    <color name="white_trans60">#99FFFFFF</color>
+    <color name="white_trans70">#B4FFFFFF</color>
+    <color name="white_trans80">#CDFFFFFF</color>
+    <color name="white_trans85">#D9FFFFFF</color>
+    <color name="defTextColor">#333333</color>
+    <!--<color name="mainColor1">#e4f8ff</color>-->
+    <!--<color name="mainColor2">#b2ffb2</color>-->
+    <color name="mainColor1Darker">#0093C4</color>
+    <color name="mainColor2Darker">#00A800</color>
+    <color name="medGroupcolor">#00DB00</color>
+
+    <!-- <color name="drawerDevider">#CCCCCC</color> -->
+    <color name="mainColor1Trans">#8000BFFF</color>
+    <color name="c_reminder_bg">#FF4C00</color>
+    <!-- applies -->
+
+    <color name="appBgColor">@color/mainColor1</color>
+    <color name="drawerDevider">@android:color/white</color>
+
+    <color name="text_color">#382e00</color>
+
+    <!-- 行事曆事件類型 -->
+    <color name="monthview_date_storkecolor_gray">#BFBFBF</color>
+    <color name="monthview_date_backgroundcolor_gray">#55DFE0E1</color>
+    <color name="yellow_color">#FF0</color>
+    <color name="gray_color">#AFAFAF</color>
+    <color name="DFF4D5">#DFF4D5</color>
+    <color name="page_transparnet">#00000000</color>
+    <color name="event_dot_color">#85D8DC</color>
+    <color name="event_type_green">#00a650</color>
+    <color name="event_type_purple">#92278f</color>
+    <color name="event_type_yellow">#f7941d</color>
+    <color name="event_type_blue">#0072bb</color>
+    <color name="event_type_gracegreen">#8dc73f</color>
+    <color name="event_type_graceblue">#6efff0</color>
+</resources>

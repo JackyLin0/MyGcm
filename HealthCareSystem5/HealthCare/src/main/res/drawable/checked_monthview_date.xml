@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@color/yellow_color"/>-->
+
+    <!--&lt;!&ndash; 默認時的背景圖片 &ndash;&gt;-->
+    <!--<item android:drawable="@drawable/shape_monthview_week_date" />-->
+    <!--&lt;!&ndash;選中時的背景圖片  &ndash;&gt;-->
+    <!--<item android:state_selected="true"-->
+    <!--android:drawable="@color/yellow_color" />-->
+
+    <!--&lt;!&ndash; 沒有焦點時的背景圖片 &ndash;&gt;-->
+    <!--<item android:state_window_focused="false"-->
+    <!--android:drawable="@drawable/shape_monthview_week_date" />-->
+    <!--&lt;!&ndash;獲得焦點時的背景圖片  &ndash;&gt;-->
+    <!--<item android:state_focused="true"-->
+    <!--android:drawable="@color/yellow_color" />-->
+
+    <!-- 非触摸模式下获得焦点并单击时的背景图片 -->
+    <item android:drawable="@drawable/shape_monthview_week_date" android:state_focused="true" android:state_pressed="true" />
+    <!-- 觸摸模式下單擊時的背景圖片 -->
+    <item android:drawable="@color/yellow_color" android:state_focused="false" android:state_pressed="true" />
+</selector>
